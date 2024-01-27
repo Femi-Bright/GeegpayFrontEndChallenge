@@ -116,7 +116,7 @@ const TableRow = ({ order }) => {
                       <p className="text-sm text-gray-500 dark:text-gray-200">
                         Name
                       </p>
-                      <p className="text-sm text-gray-500 dark:text-gray-200">
+                      <p className="text-sm text-gray-900 dark:text-gray-100">
                         {order.name}
                       </p>
                     </div>
