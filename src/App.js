@@ -91,7 +91,7 @@ const weeklySales = {
   },
   w8: {
     unitSold: 45,
-    worth: "45,000",
+    worth: "35,000",
   },
   w9: {
     unitSold: 32,
