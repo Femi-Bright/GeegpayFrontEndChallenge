@@ -84,15 +84,34 @@ const Sidebar = () => {
         </div>
       </div>
       <ul className="lg:absolute lg:w-full lg:bottom-5 lg:left-[50%] lg:translate-x-[-50%]">
-        <SidebarItem
-          isActive={isFullWidth}
-          Icon={ArrowRight}
-          text={isFullWidth && "Collapse"}
-          iconClassName={isFullWidth && "rotate-[-180deg]"}
-          onClick={toggleFullWidth}
-          noBorder
-          isFullWidth={isFullWidth}
-        />
+        <li
+          className={`relative sidebar-item transition-colors duration-300 ease-out ${
+            isFullWidth
+              ? "text-gray-900 dark:text-primary"
+              : "text-gray-400 hover:text-gray-900 dark:hover:text-primary"
+          }`}
+        >
+          <button
+            title="Collapse"
+            onClick={toggleFullWidth}
+            {...(isFullWidth ? { "aria-current": "page" } : {})}
+            className={`flex w-full items-center p-[10px] ${
+              !isFullWidth && "justify-center"
+            }`}
+          >
+            <ArrowRight
+              isActive={isFullWidth}
+              className={isFullWidth ? "rotate-[-180deg]" : ""}
+            />
+            <span
+              className={` ${
+                isFullWidth ? "w-auto ml-4" : "w-0 overflow-hidden"
+              } transition-[width] duration-700`}
+            >
+              {isFullWidth && "Collapse"}
+            </span>
+          </button>
+        </li>
         <SidebarItem
           isFullWidth={isFullWidth}
           text="Settings"

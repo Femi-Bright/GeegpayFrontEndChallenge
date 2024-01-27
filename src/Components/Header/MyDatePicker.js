@@ -25,6 +25,7 @@ const MyDatePicker = ({ className }) => {
   const Picker = forwardRef(({ value, onClick }, ref) => {
     return (
       <button
+        title="Calendar"
         onClick={onClick}
         ref={ref}
         className={`px-4 py-3 items-center min-w-[193px] ${className}`}

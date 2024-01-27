@@ -19,7 +19,10 @@ const Header = () => {
             {({ open }) => (
               <>
                 <Menu.Button>
-                  <div className="size-10 flex items-center justify-center rounded-full dark:bg-gray-900 border border-[#DADDDD] dark:border-gray-900">
+                  <div
+                    title="Nofitications"
+                    className="size-10 flex items-center justify-center rounded-full dark:bg-gray-900 border border-[#DADDDD] dark:border-gray-900"
+                  >
                     <Bell className="text-[#0D062D] dark:text-white" />
                   </div>
                 </Menu.Button>

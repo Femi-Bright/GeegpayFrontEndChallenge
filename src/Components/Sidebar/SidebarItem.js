@@ -20,6 +20,7 @@ const SidebarItem = ({
       } ${className}`}
     >
       <a
+        title={text}
         href="/"
         onClick={(e) => e.preventDefault()}
         {...(isActive ? { "aria-current": "page" } : {})}

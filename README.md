@@ -24,7 +24,7 @@ The task is to craft a responsive and visually appealing analytics dashboard, as
 
 ### Links
 
-- Live Site URL: [Geegpay Dashboard](https://your-live-site-url.com)
+- Live Site URL: [Geegpay Dashboard](https://fb-geegpay-dashboard.vercel.app/)
 
 ## My process
 
