@@ -1,4 +1,4 @@
-import { ArrowDown, Bell, Search } from "../Icons";
+import { ArrowDown, Bell } from "../Icons";
 import avatar from "../../Asset/avatars/justin-bergson.jpg";
 import SearchInput from "./SearchInput";
 import MyDatePicker from "./MyDatePicker";

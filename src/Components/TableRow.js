@@ -125,7 +125,7 @@ const TableRow = ({ order }) => {
                         Order fee
                       </p>
                       <p className="text-sm text-gray-500 dark:text-gray-200">
-                        ${eval(order.amount.replace(",", "") - 500)}
+                        ${+order.amount.replace(",", "") - 500}
                       </p>
                     </div>
                     <div className="flex justify-between items-center mb-8">
