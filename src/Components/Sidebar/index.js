@@ -97,7 +97,6 @@ const Sidebar = () => {
           isFullWidth={isFullWidth}
           text="Settings"
           Icon={Settings}
-          noBorder
         />
         <SidebarItem
           isFullWidth={isFullWidth}
