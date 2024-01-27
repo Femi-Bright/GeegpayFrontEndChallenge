@@ -236,17 +236,17 @@ function App() {
                 data={totalRefundData}
                 title="Total Refund"
                 amount={270}
-                isProfit
               />
               <StatsCard
                 Icon={Cart}
-                data={totalOrderData}
+                data={totalRefundData}
                 title="Average Sales"
                 amount={1567}
+                isProfit
               />
               <StatsCard
                 Icon={Coin}
-                data={totalRefundData}
+                data={totalOrderData}
                 title="Total Income"
                 amount={"$350.000"}
               />
