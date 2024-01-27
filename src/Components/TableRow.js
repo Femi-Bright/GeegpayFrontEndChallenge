@@ -89,6 +89,8 @@ const TableRow = ({ order }) => {
                         ({order.status})
                       </span>
                     </div>
+
+                    <p className="text-sm dark:text-gray-200">{order.date}</p>
                     <button
                       onClick={print}
                       className="p-2 rounded-full bg-primary bg-opacity-10 print:hidden"
@@ -110,6 +112,14 @@ const TableRow = ({ order }) => {
                     </button>
                   </Dialog.Title>
                   <div className="my-8 font-medium">
+                    <div className="flex justify-between items-center mb-4">
+                      <p className="text-sm text-gray-500 dark:text-gray-200">
+                        Name
+                      </p>
+                      <p className="text-sm text-gray-500 dark:text-gray-200">
+                        {order.name}
+                      </p>
+                    </div>
                     <div className="flex justify-between items-center mb-4">
                       <p className="text-sm text-gray-500 dark:text-gray-200">
                         Order fee
@@ -138,7 +148,7 @@ const TableRow = ({ order }) => {
                     </div>
                   </div>
 
-                  <div className="mt-8 flex justify-end print:hidden">
+                  <div className="mt-8 flex justify-end  print:hidden ">
                     <button
                       type="button"
                       className="inline-flex justify-center rounded-md border border-transparent bg-red-100 px-4 py-2 text-sm font-medium text-red-900 hover:bg-red-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2"
