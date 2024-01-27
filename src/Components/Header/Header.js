@@ -32,7 +32,7 @@ const Header = () => {
                   leaveFrom="transform opacity-100 scale-100"
                   leaveTo="transform opacity-0 scale-95"
                 >
-                  <Menu.Items className="absolute overflow-y-hidden right-0 top-10 mt-2 w-72 origin-top-right divide-y text-gray-600 dark:text-gray-200 divide-gray-100 dark:divide-gray-700 rounded-[20px] bg-white dark:bg-gray-900 shadow-lg ring-1 ring-black/5 focus:outline-none">
+                  <Menu.Items className="absolute overflow-y-hidden right-0 Z-[200] top-10 mt-2 w-72 origin-top-right divide-y text-gray-600 dark:text-gray-200 divide-gray-100 dark:divide-gray-700 rounded-[20px] bg-white dark:bg-gray-900 shadow-lg ring-1 ring-black/5 focus:outline-none">
                     <div className="">
                       <Menu.Item>
                         <button
