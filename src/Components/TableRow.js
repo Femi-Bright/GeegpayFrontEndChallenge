@@ -5,7 +5,7 @@ import { Fragment, useState } from "react";
 import Amount from "./BarChart/Amount";
 
 const TableRow = ({ order }) => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
     setIsOpen(false);
