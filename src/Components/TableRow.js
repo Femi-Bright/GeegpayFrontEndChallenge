@@ -2,7 +2,6 @@ import React from "react";
 import { DocumentDownload } from "./Icons";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
-import Amount from "./BarChart/Amount";
 
 const TableRow = ({ order }) => {
   const [isOpen, setIsOpen] = useState(false);

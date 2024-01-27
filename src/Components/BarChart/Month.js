@@ -13,11 +13,11 @@ const Month = ({ month, amount, isHighest, worth }) => {
   }, [amount]);
   return (
     <div className="chart-month relative text-gray-600 dark:text-gray-50 text-sm">
-      <p className="hidden md:block text-[8px] md:text-base text-center">
+      <p className="hidden md:w-[30px] md:block text-[8px] md:text-base text-center">
         {month}
       </p>
-      <p className="md:hidden text-[8px] md:text-base text-center">
-        {month.slice(0, 2)}
+      <p className="md:hidden md:w-[30px] text-[8px] md:text-base text-center">
+        {month === "Jul" ? "Jl" : month.slice(0, 2)}
       </p>
       <div
         style={{ height: `${height}px` }}
@@ -30,7 +30,7 @@ const Month = ({ month, amount, isHighest, worth }) => {
         <div className="w-full h-full relative">
           <div
             className={`${
-              !isHighest && "opacity-0"
+              isHighest ? "opacity-0 md:opacity-100" : "opacity-0"
             } title absolute rounded-[8px] bg-[#090C2C] dark:bg-gray-200 left-[50%] translate-x-[-50%] top-[-40px]`}
           >
             <div className="relative">
