@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.border-right-icon {
+  transition: opacity 300ms ease-out;
+}
+
+.sidebar-item:hover .border-right-icon {
+  opacity: 1;
+}
+
+.chart-amount.amount-invisible p {
+  visibility: hidden;
+}
+.chart-amount.amount-invisible::after {
+  opacity: 0.4;
+}
+
+.dark .chart-amount::after {
+  border-color: #838282;
+}
+
+.chart-amount::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: calc(100% - 28px);
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border-top: 2px dashed #eaeaea;
+}
+
+@media screen and (min-width: 768px) {
+  .chart-amount::after {
+    width: calc(100% - 56px);
+  }
+}
+
+.chart-bar {
+  transition: height 600ms ease-out;
+}
+
+.chart-bar .title {
+  transition: opacity 300ms ease-out;
+}
+
+.chart-bar:hover .title {
+  opacity: 1;
+}
+
+.has-stat-sparkline svg:nth-child(2) {
+  width: 104px;
+}
+
+div.react-datepicker__tab-loop > div.react-datepicker-popper {
+  left: -50px !important;
+  z-index: 10;
+}
