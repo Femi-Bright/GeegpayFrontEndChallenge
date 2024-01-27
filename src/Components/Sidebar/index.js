@@ -71,7 +71,7 @@ const Sidebar = () => {
         </ul>
       </nav>
       <div className="fixed lg:inline-block z-50 lg:z-0 bottom-5 lg:bottom-0 rotate-[270deg] lg:rotate-0 left-[100px] lg:static px-[10px]">
-        <div className="px-2 py-4 rounded-[100px] space-y-4 border border-gray-200 lg:px-4 lg:border-none backdrop-blur-md lg:backdrop-blur-none bg-white/80 lg:bg-white dark:bg-gray-700/80 dark:lg:bg-gray-700 flex flex-col justify-center">
+        <div className="px-2 py-4 rounded-[100px] space-y-4 border border-gray-200 dark:border-gray-700 lg:px-4 lg:border-none backdrop-blur-md lg:backdrop-blur-none bg-white/80 lg:bg-white dark:bg-gray-700/70 dark:lg:bg-gray-700 flex flex-col justify-center">
           <button onClick={setLightMode} className="flex self-center">
             <Light
               className={"text-white dark:text-gray-500"}

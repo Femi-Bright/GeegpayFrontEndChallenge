@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle {
+  @apply dark:fill-gray-700 dark:text-gray-700;
+}
+.react-datepicker {
+  @apply !bg-gray-700 !text-gray-200;
+}
+.react-datepicker__current-month,
+.react-datepicker__day {
+  @apply !text-gray-100;
+}
+.react-datepicker__day-name {
+  @apply !text-gray-200;
+}
+
+.react-datepicker__header {
+  @apply !bg-gray-800;
+}
 .border-right-icon {
   transition: opacity 300ms ease-out;
 }

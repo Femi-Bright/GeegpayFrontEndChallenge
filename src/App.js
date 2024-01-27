@@ -203,8 +203,8 @@ function App() {
       <div className="ml-14 lg:ml-20">
         <Header />
         <main className="p-2 md:p-5 mt-16 lg:mt-[88px]">
-          <div className="flex items-center justify-end mb-5">
-            <MyDatePicker className="flex xl:hidden" />
+          <div className="flex items-center justify-end mb-5 xl:hidden">
+            <MyDatePicker className="flex" />
           </div>
           <div className="flex w-full gap-5 lg:gap-0 flex-wrap justify-between">
             <div className="w-full lg:w-7/12 lg:pr-[10px]">
@@ -259,7 +259,7 @@ function App() {
                   </h3>
                   <a
                     href="/"
-                    className="text-primary text-base md:text-lg font-medium"
+                    className="text-primary  hover:text-green-700 text-base md:text-lg font-medium"
                   >
                     See all
                   </a>
@@ -305,7 +305,7 @@ function App() {
                   </h3>
                   <a
                     href="/"
-                    className="text-primary text-base md:text-lg font-medium"
+                    className="text-primary  hover:text-green-700 text-base md:text-lg font-medium"
                   >
                     See all
                   </a>
