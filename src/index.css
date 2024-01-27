@@ -19,6 +19,11 @@
 .react-datepicker__header {
   @apply dark:!bg-gray-800;
 }
+
+.react-datepicker__day--selected {
+  @apply !bg-green-500;
+}
+
 .border-right-icon {
   transition: opacity 300ms ease-out;
 }
